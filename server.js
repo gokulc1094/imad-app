@@ -9,6 +9,79 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleone={
+    title:"article one..webb",
+    heading:"article one",
+    date:"aug 3 2017",
+    content:` <p>
+        
+        These arte the contents of article oneeee..djvnndnvndndkm, kcvmklmxlvklv,cv Vc
+        cvlmkmklvmc
+        vbknmcxlkvc
+    </p>
+     <p>
+        
+        These arte the contents of article oneeee..djvnndnvndndkm, kcvmklmxlvklv,cv Vc
+        cvlmkmklvmc
+        vbknmcxlkc
+    </p>
+     <p>
+        
+        These arte the contents of article oneeee..djvnndnvndndkm, kcvmklmxlvklv,cv Vc
+        cvlmkmklvmc
+        vbknmcxlkvc
+    </p>`
+};
+
+    
+var htmltemplate=`
+<html>
+<head>
+    <title>${title}</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1"/>
+    <link href="/ui/style.css" rel="stylesheet" />
+    
+    
+    </head>
+<body>
+    
+    
+    <div class ="container">
+    <div>
+    <a href='/'>home</a>
+    </div>
+    <div>
+        <h4>${heading}</h4>
+        
+    </div>
+  <div>
+    <p>
+    ${date}
+    </p>
+   ${content}
+</div>    
+    </div>
+</body>    
+    
+    
+    
+</html>
+
+
+
+
+
+
+`
+
+
+
+
+
+
+
+
+
 
 app.get('/article-one', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
