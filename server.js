@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 
 var articles={
-     'article-one':{
+     'articleone':{
     title:"article one..webb",
     heading:"article one",
     date:"aug 3 2017",
