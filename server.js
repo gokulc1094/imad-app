@@ -8,6 +8,8 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+
 var articles={
      'article-one':{
     title:"article one..webb",
@@ -90,38 +92,35 @@ var articles={
      var heading=data.heading;
      var date=data.date;
      var content=data.content;
-var htmltemplate=`
-<html>
-<head>
-    <title>${title}</title>
-    <meta name="viewport" content="width=device-width,intial-scale=1"/>
-    <link href="/ui/style.css" rel="stylesheet" />
-    
-    
-    </head>
-<body>
-    
-    
-    <div class ="container">
-    <div>
-    <a href='/'>home</a>
-    </div>
-    <div>
-        <h4>${heading}</h4>
-        
-    </div>
-  <div>
-    <p>
-    ${date}
-    </p>
-   ${content}
-</div>    
-    </div>
-</body>    
-    
-    
-    
-</html>
+     var htmltemplate=`
+                 <html>
+                <head>
+                    <title>${title}</title>
+                    <meta name="viewport" content="width=device-width,intial-scale=1"/>
+                    <link href="/ui/style.css" rel="stylesheet" />
+                    
+                    
+                </head>
+                <body>
+                    
+                    
+                    <div class ="container">
+                        <div>
+                        <a href='/'>home</a>
+                        </div>
+                        <div>
+                        <h4>${heading}</h4>
+                        
+                        </div>
+                        <div>
+                        <p>
+                        ${date}
+                        </p>
+                       ${content}
+                          </div>    
+                        </div>
+                </body>   
+                </html>
 
 `;
 return htmltemplate;
