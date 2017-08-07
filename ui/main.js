@@ -66,7 +66,7 @@ button.onclick=function(){
   };
   
     
-    request.open('GET','http://gokulc1094.imad.hasura-app.io/submit-one'+name,true);
+    request.open('GET','http://gokulc1094.imad.hasura-app.io/submit-name'+name,true);
      request.send(null);
     //render 
     
