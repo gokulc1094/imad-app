@@ -2,7 +2,7 @@
 var button =document.getElementById('button');
 var counter=0;
 
-button.onClick=function(){
+button.onclick=function(){
     //render 
     
     counter=counter+1;
