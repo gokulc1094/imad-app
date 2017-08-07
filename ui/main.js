@@ -31,8 +31,8 @@ button.onclick=function(){
 };
     
   var nameinput=document.getElementById('name');
-  var name=nameInput.value;
-  var button=document.getElementById('submit-btn');
+  var name=nameInput.Value;
+  var submit=document.getElementById('submit-btn');
   button.onclick=function(){
       var names=['name1','name2','name3','name4'];
       var list='';
