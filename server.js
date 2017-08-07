@@ -136,6 +136,11 @@ app.get('/:articlename', function (req, res) {
  res.send(createtemplate(articles[articlename]));
 });
 
+var counter=0;
+app.get("/counter",function(req,res){
+   counter=counter+1;
+   res.send(counter.toString());
+});
 
 
 app.get('/ui/style.css', function (req, res) {
