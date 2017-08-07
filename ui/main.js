@@ -30,7 +30,7 @@ button.onclick=function(){
      request.send(null);
 };
     
-  var nameinput=document.getElementById('name');
+  var nameInput=document.getElementById('name');
   var name=nameInput.value;
   var submit=document.getElementById('submit-btn');
   button.onclick=function(){
@@ -38,7 +38,7 @@ button.onclick=function(){
       var list='';
       for(var i=0;i<names.length;i++)
       {
-          list=list+'<li>'+names[i]+'</li>';
+          list+='<li>'+names[i]+'</li>';
           
       }
   
