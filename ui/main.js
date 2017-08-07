@@ -33,8 +33,7 @@ button.onclick=function(){
     
     
   var nameInput=document.getElementById('name');
-  var name=nameInput.value;
-  var submit=document.getElementById('submit-btn');
+ 
   submit.onclick=function(){
       
        //create or make an an http request
@@ -65,7 +64,9 @@ button.onclick=function(){
  
   };
   
-    
+  
+   var name=nameInput.value;
+  var submit=document.getElementById('submit-btn');  
     request.open('GET','http://gokulc1094.imad.hasura-app.io/submit-name'+name,true);
      request.send(null);
     //render 
