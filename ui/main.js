@@ -43,7 +43,7 @@ button.onclick=function(){
       }
   
     var ul=document.getElementById('namelist');
-    ul.innerHTMl=list;
+    ul.innerHTML=list;
 
  
   };
