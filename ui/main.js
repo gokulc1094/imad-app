@@ -30,7 +30,7 @@ button.onclick=function(){
      request.send(null);
 };
     
-  var nameInput=document.getElementById('name');
+/*  var nameInput=document.getElementById('name');
   var name=nameInput.value;
   var submit=document.getElementById('submit-btn');
   button.onclick=function(){
@@ -52,4 +52,4 @@ button.onclick=function(){
     
     //render 
     
-    
+    */
