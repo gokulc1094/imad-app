@@ -150,15 +150,6 @@ app.get('/submit-name',function(req,res){
    res.send(JSON.stringify(names));
 });
 
-
-
-
-app.get('/:articlename', function (req, res) {
-    var articlename=req.params.articlename;
- res.send(createtemplate(articles[articlename]));
-});
-
-
 var pool=new Pool(config);
 app.get("/test-db",function(req,res){
     pool.query('SELECT * FROM test',function(err,result){
@@ -172,6 +163,15 @@ app.get("/test-db",function(req,res){
     });
     
 });
+
+
+app.get('/:articlename', function (req, res) {
+    var articlename=req.params.articlename;
+ res.send(createtemplate(articles[articlename]));
+});
+
+
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
