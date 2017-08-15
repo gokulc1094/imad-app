@@ -7,7 +7,7 @@ var config={
     user:'gokulc1094',
     database:'gokulc1094',
     host:'db.imad-hasura-app.io',
-    port"'5432',
+    port:'5432',
     password:process.env.DB_PASSWORD
 };
 
