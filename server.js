@@ -130,7 +130,7 @@ var articles={
                         </div>
                         <div>
                         <p>
-                        ${date.toDateString}
+                        ${date.toDateString()}
                         </p>
                        ${content}
                           </div>    
